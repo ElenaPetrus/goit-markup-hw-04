@@ -10,7 +10,9 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --footer-color: #2F303A;
     --section-color: #F5F4FA;
+    --social-link-color:#AFB1B8;
     --project-border-color: #EEEEEE;
+    --hero-overlay: rgba(47, 48, 58, 0.4);
     --section-top: 94px;
     --section-btm: 94px;
 }
@@ -89,6 +91,10 @@ button {
     border: 1px solid transparent;
     outline-style: none;
     }
+.social-list-icon{
+    width: 20px;
+    height: 20px;
+}
 /*====================END COMPONENTS===========================*/
 
 /*====================HEADER===========================*/
@@ -181,6 +187,13 @@ color: var(--accent-color);
 
 /*====================HERO===========================*/
 .hero{
+    background-image: linear-gradient(
+        var(--hero-overlay),
+        var(--hero-overlay)
+        ), 
+    url("../images/hero/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--footer-color);
 }
 .hero-title {
@@ -211,6 +224,7 @@ color: var(--accent-color);
 .hero-container{
     text-align: center;
     padding: 200px 15px;
+
 }
 /*====================END HERO===========================*/
 
@@ -297,6 +311,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+margin-bottom: 16px;
 
 color: var(--secondary-collor);
 }
@@ -309,8 +324,7 @@ background-color: var(--section-color);
 }
 .worker-description{
     background: var(--contrast-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
 
     text-align: center;
     border-radius: 0px 0px 4px 4px;
@@ -318,6 +332,30 @@ background-color: var(--section-color);
 }
 .worker-item-img{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.social-link-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-link-icon:hover,
+.social-link-icon:focus {
+    background-color: var(--accent-color);
+}
+.social-link-icon:hover .social-list-icon,
+.social-link-icon:focus .social-list-icon {
+    fill: var(--contrast-color);
+}
+
+.social-link-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-link-color);
+   
 }
 /*====================END TEAM===========================*/
 /*====================FOOTER===========================*/
