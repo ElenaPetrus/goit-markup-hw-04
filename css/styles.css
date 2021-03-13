@@ -12,6 +12,7 @@
     --section-color: #F5F4FA;
     --social-link-color:#AFB1B8;
     --project-border-color: #EEEEEE;
+    --bg-hero-color:#C4C4C4;
     --hero-overlay: rgba(47, 48, 58, 0.4);
     --section-top: 94px;
     --section-btm: 94px;
@@ -91,10 +92,6 @@ button {
     border: 1px solid transparent;
     outline-style: none;
     }
-.social-list-icon{
-    width: 20px;
-    height: 20px;
-}
 /*====================END COMPONENTS===========================*/
 
 /*====================HEADER===========================*/
@@ -186,7 +183,11 @@ color: var(--accent-color);
 /*====================END HEADER===========================*/
 
 /*====================HERO===========================*/
-.hero{
+.overlay{
+    max-width: 1600px;
+    height: 600;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         var(--hero-overlay),
         var(--hero-overlay)
@@ -194,7 +195,7 @@ color: var(--accent-color);
     url("../images/hero/bg-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--footer-color);
+    background-color: var(--bg-hero-color);
 }
 .hero-title {
     font-weight: 900;
@@ -338,14 +339,6 @@ background-color: var(--section-color);
     align-items: center;
     justify-content: space-between;
 }
-.social-link-icon:hover,
-.social-link-icon:focus {
-    background-color: var(--accent-color);
-}
-.social-link-icon:hover .social-list-icon,
-.social-link-icon:focus .social-list-icon {
-    fill: var(--contrast-color);
-}
 
 .social-link-icon{
     display: flex;
@@ -357,8 +350,72 @@ background-color: var(--section-color);
     fill: var(--social-link-color);
    
 }
+.social-link-icon:hover,
+.social-link-icon:focus {
+    background-color: var(--accent-color);
+}
+.social-link-icon:hover .social-list-icon,
+.social-link-icon:focus .social-list-icon {
+    fill: var(--contrast-color);
+}
 /*====================END TEAM===========================*/
+
+/*====================CLIENTS===========================*/
+.client-container{
+    padding-top: var(--section-btm);
+    padding-bottom: 88px;
+    
+}
+.client-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+}
+.client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(100% /6 - 30px);
+}
+.client-site-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    margin: 15px;
+    background-color:var(--contrast-color);
+    border: 1px solid var(--social-link-color);
+    border-radius: 4px;
+}
+.client-site-link {
+    fill: var(--social-link-color);
+}
+
+.client-site-link:hover,
+.client-site-link:focus {
+    border: 1px solid var(--accent-color);
+}
+.client-site-link:hover .client-link-icon,
+.client-site-link:focus .client-link-icon {
+    fill: var(--accent-color);
+}
+
+/*====================END CLIENTS===========================*/
 /*====================FOOTER===========================*/
+.footer {
+    background-color:var(--footer-color);
+}
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact{
+    margin-right: 70px;
+}
 .footer-logo{
     display: inline-block;
     margin-bottom: 20px;
@@ -393,13 +450,36 @@ margin-top: 9px;
     color:var(--footer-text-color);
     display: inline-block;
 }
-.footer {
-background-color:var(--footer-color);
+.social {
+    min-width: 206px;
 }
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.join {
+    display: block;
+    margin-bottom: 20px;
+    font-family:var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--contrast-color);
 }
+.social-link-icon-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--contrast-color);
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.social-link-icon-footer:hover,
+.social-link-icon-footer:focus {
+    background-color:var(--accent-color);
+}
+
 /*====================END FOOTER===========================*/
 
 /*====================PROJECT SELECTOR===========================*/ 
