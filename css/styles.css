@@ -95,6 +95,9 @@ button {
 /*====================END COMPONENTS===========================*/
 
 /*====================HEADER===========================*/
+.header{
+    border-bottom: 1px solid var(--header-line-color);
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -147,6 +150,8 @@ button {
     color:var(--accent-color)
 }
 .mail-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -158,6 +163,8 @@ button {
     margin-right: 50px;
 }
 .tel-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -173,13 +180,15 @@ color: var(--accent-color);
 .tel-link:focus {
 color: var(--accent-color);
 }
-.header{
-     border-bottom: 1px solid var(--header-line-color);
+
+.mail-link-icon{
+    margin-right: 10px;
+    fill: currentColor;
 }
-/*.header-container{
-    padding-top: 24px;
-    padding-bottom: 24px;
-}*/
+.tel-link-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
 /*====================END HEADER===========================*/
 
 /*====================HERO===========================*/
@@ -264,6 +273,18 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
 
     color: var(--secondary-collor);
+}
+.advantage-image{
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--section-color);
+    border-radius: 4px;
+}
+.advantage-image-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*====================END ADVANTAGES===========================*/
 
@@ -567,7 +588,7 @@ margin-top: 9px;
     margin-bottom: 4px; 
 }
 .project-type {
-    font-family: Roboto;
+    font-family: var(--main-color);
     font-weight: normal;
     font-size: 16px;
     line-height: 1.8;
