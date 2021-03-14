@@ -275,16 +275,14 @@ color: var(--accent-color);
     color: var(--secondary-collor);
 }
 .advantage-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--section-color);
     border-radius: 4px;
-}
-.advantage-image-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 /*====================END ADVANTAGES===========================*/
 
