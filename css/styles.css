@@ -95,6 +95,9 @@ button {
 /*====================END COMPONENTS===========================*/
 
 /*====================HEADER===========================*/
+.hero {
+margin: 0 auto;
+}
 .header{
     border-bottom: 1px solid var(--header-line-color);
 }
@@ -336,6 +339,7 @@ margin-bottom: 16px;
 color: var(--secondary-collor);
 }
 .team{
+margin: 0 auto;
 background-color: var(--section-color);
 }
 .team-container{
@@ -396,6 +400,7 @@ background-color: var(--section-color);
     justify-content: center;
     align-items: center;
     flex-basis: calc(100% /6 - 30px);
+    margin: 15px;
 }
 .client-site-link{
     display: flex;
@@ -403,7 +408,6 @@ background-color: var(--section-color);
     align-items: center;
     width: 170px;
     height: 90px;
-    margin: 15px;
     background-color:var(--contrast-color);
     border: 1px solid var(--social-link-color);
     border-radius: 4px;
@@ -424,6 +428,7 @@ background-color: var(--section-color);
 /*====================END CLIENTS===========================*/
 /*====================FOOTER===========================*/
 .footer {
+    margin: 0 auto;
     background-color:var(--footer-color);
 }
 .footer-container {
